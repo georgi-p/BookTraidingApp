@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.book-card {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-title {
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+.book-author {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+.book-actions {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    transition: background 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit {
+    background-color: #3498db;
+}
+
+.delete {
+    background-color: #e74c3c;
+}
+
+.add {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #2ecc71;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.navigation {
+    text-align: right;
+    padding: 10px 20px;
+    background: #f4f4f4;
+}
+
+.navigation a {
+    color: #2c3e50;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    background-color: #2980b9;
+}
+
+a {
+    margin: 5px;
+    background-color: #2980b9;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+input {
+    margin: 5px;
+}

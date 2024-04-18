@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Books Available for Exchange
+  div.books-container
+    each book in books
+      div.book-card
+        h3.book-title #{book.title}
+        p.book-author Author: #{book.author}
+        div.book-actions
+          a.btn.edit(href="/books/edit/" + book.id) Edit
+          a.btn.delete(href="/books/delete/" + book.id) Delete
+  a.btn.add(href="/books/add") Add a New Book

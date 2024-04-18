@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Edit Book
+  form(method="POST", action="/books/edit/" + book.id)
+    div
+      label(for="title") Title:
+      input(type="text", name="title", value=book.title, required=true)
+    div
+      label(for="author") Author:
+      input(type="text", name="author", value=book.author, required=true)
+    div
+      button(type="submit") Update Book

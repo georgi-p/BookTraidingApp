@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title #{title} - Book Exchange
+        link(rel='stylesheet', href='/css/style.css')
+        link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet")
+     
+          
+    body 
+        block content
+          h1 Login
+          form(method="post", action="/users/login")
+            label(for="username") Username:
+            input(type="text", name="username", required=true)
+            label(for="password") Password:
+            input(type="password", name="password", required=true)
+            button(type="submit") Log In
